@@ -1,0 +1,15 @@
+package com.te.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class MvcController {
+	@RequestMapping("/spider")
+	public String home() {
+		return "home.jsp";
+	}
+	public String technoelevate() {
+		return "office.jsp";
+		
+	}
+
+}

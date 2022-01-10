@@ -1,0 +1,5 @@
+package com.te.controller.service;
+
+public class MvcService {
+
+}

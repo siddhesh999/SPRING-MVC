@@ -1,0 +1,18 @@
+package com.te.controller;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
+@RequestMapping("/")
+@Component
+public class MvcController {
+	@RequestMapping("/spider")
+	public String home() {
+		return "home.jsp";
+	}
+	@RequestMapping
+	public String technoelevate() {
+		return "office.jsp";
+		
+	}
+
+}

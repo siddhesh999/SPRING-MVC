@@ -1,0 +1,33 @@
+package com.te.controller;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@RequestMapping("/")
+@Component
+public class MvcController {
+	@RequestMapping("/spider")
+	public String home() {
+		return "home";
+	}
+
+	@RequestMapping("login")
+	public String login() {
+		return "loginpage";
+
+	}
+
+//	@RequestMapping(path = "/login", method = RequestMethod.POST)
+//	public String log(HttpServletRequest req) {
+	public String log(@RequestParam("username") String usermane, @RequestParam("pass") String password) {
+//		String username = req.getParameter("user");
+//		String password = req.getParameter("pass");
+
+		if (usermane.isEmpty()) {
+			return "failure";
+		}
+		return "succsess";
+
+	}
+}

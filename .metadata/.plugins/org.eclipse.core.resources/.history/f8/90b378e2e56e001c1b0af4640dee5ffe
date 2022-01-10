@@ -1,0 +1,5 @@
+package com.te.controller.model;
+
+public class Register {
+
+}

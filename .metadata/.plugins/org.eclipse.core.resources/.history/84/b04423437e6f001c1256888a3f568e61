@@ -1,0 +1,15 @@
+package com.te.controller;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class MyController {
+	
+	@GetMapping("/test")
+public String test(Model model) {
+	String s ="haarshad";
+	model.addAttribute("name",s);
+	return "test.jsp";
+	
+}
+}

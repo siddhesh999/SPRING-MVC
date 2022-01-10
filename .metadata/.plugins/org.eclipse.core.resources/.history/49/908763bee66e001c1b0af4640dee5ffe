@@ -1,0 +1,12 @@
+package com.te.controller.model;
+
+import lombok.Data;
+@Data
+public class Register {
+	private String name;
+	private String email;
+	private Long contactNumber;
+	private String Address;
+	
+	
+}

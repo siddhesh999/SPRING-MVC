@@ -1,0 +1,7 @@
+package com.te.controller.daolayer;
+
+public class MvcController {
+public String name() {
+	
+}
+}

@@ -1,0 +1,12 @@
+package com.te.controller;
+
+import org.springframework.ui.Model;
+
+public class MyController {
+public String test(Model model) {
+	String s ="haarshad";
+	model.addAttribute("name",s);
+	return "test";
+	
+}
+}
